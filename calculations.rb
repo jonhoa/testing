@@ -68,10 +68,17 @@ RSpec.describe Calculator do
     end
   end
   describe '#square' do
-    it 'return the square product of two arguments' do
+    it 'return the square of a number' do
       calculator = Calculator.new
       result = calculator.sqaure(6)
       expect(result).to eq(36)
+    end
+  end
+  describe '#power' do
+    it 'return the power of two arguments' do
+      calculator = Calculator.new
+      result = calculator.power(2,3)
+      expect(result).to eq(8)
     end
   end
 end
