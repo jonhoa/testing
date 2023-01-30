@@ -60,4 +60,12 @@ RSpec.describe Calculator do
       expect(result).to eq(100)
     end
   end
+  describe '#divide' do
+    it 'return the division of two arguments' do
+      calculator = Calculator.new
+      result = calculator.divide(10,2)
+      expect(result).to eq(5)
+    end
+  end
+  
 end
