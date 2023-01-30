@@ -48,4 +48,11 @@ RSpec.describe Calculator do
       expect(result).to eq(4)
     end
   end
+  describe '#multiply' do
+    it 'return the product of two arguments' do
+      calculator = Calculator.new
+      result = calculator.multiply(5,2)
+      expect(result).to eq(10)
+    end
+  end
 end
