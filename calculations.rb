@@ -41,4 +41,11 @@ RSpec.describe Calculator do
       expect(result).to eq(-2)
     end
   end
+  describe "#subtract" do
+    it 'should return the subtraction of two numbers' do
+      calculator = Calculator.new
+      result = calculator.subtract(5,1)
+      expect(result).to eq(4)
+    end
+  end
 end
