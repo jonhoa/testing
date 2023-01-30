@@ -54,5 +54,10 @@ RSpec.describe Calculator do
       result = calculator.multiply(5,2)
       expect(result).to eq(10)
     end
+    it 'product of negative numbers' do
+      calculator = Calculator.new
+      result = calculator.multiply(-10,-10)
+      expect(result).to eq(100)
+    end
   end
 end
