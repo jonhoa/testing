@@ -18,7 +18,7 @@ class Calculator
     return dividend / divisor
   end
 
-  def square(number)
+  def sqaure(square)
     return square * square
   end
 
@@ -67,5 +67,11 @@ RSpec.describe Calculator do
       expect(result).to eq(5)
     end
   end
-  
+  describe '#square' do
+    it 'return the square product of two arguments' do
+      calculator = Calculator.new
+      result = calculator.sqaure(6)
+      expect(result).to eq(36)
+    end
+  end
 end
